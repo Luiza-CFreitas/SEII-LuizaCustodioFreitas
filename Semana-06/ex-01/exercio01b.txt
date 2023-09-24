@@ -1,0 +1,26 @@
+1) Qual o limite de bytes a serem enviados por pacotes TCP e UDP?
+TCP - Cabeçalho de tamanho variável, de 20 (padrão) a 80 bytes (com todas as opções);
+UDP - Cabeçalho de tamanho fixo de pequeno: 8 bytes.
+
+
+2) Como um arquivo grande pode ser transmitido via internet?
+Utiliza-se o protocolo UDP para o envio de arquivos grandes via internet.
+Por ser mais rápido na transmissão de pacotes, suportar broadcasting e multicasting, 
+é um protocolo muito utilizado para os serviços de streaming via internet, apesar de mais simples.
+
+
+3) Qual a diferença entre as implementações TCP e UDP?
+A camada de transporte TCP é orientada à conexão, requer alta confiabilidade em suas aplicações,
+com tempo de transmissão não muito crítico, seus pacotes de dados são organizados em uma ordem especificada.
+A entrega de dados por TCP é confiável pois garante a entrega ao destino com mecanismos de correção
+de erros e retransmissão de dados. É uma implementação mais lenta que o UDP devido ao overhead de seu
+cabeçalho e rotinas envolvidas. Além disso, os pacotes perdidos podem ser retransmitidos. Não suporta
+broadcasting da dados, e utiliza os seguintes protocolos: HTTP, FTP, SMTP, HTTPS.
+O TCP consegue realizar o controle de fluxo, não enviando mais pacotes do que o destinatário consegue
+receber. Por fim, é dito que o TCP possui Doze campos.
+
+Já o UDP não é orientado à conexão, suas aplicações necessitam de transmissão de dados rápida e eficiente,
+não há uma ordem específica para os pacotes de dados, a entrega de dados ao destino não pode ser garantida,
+tem um mecanismo de verificação de erros básico, é mais rápido, simples e eficiente que o TCP, porém seus pacotes
+perdidos não são retransmitidos, suporta broadcasting de dados e é usado pelos seguintes protocolos: DNS, DHCP,
+ANMP, RIP, TFTP. Por fim, é dito que o UDP não realiza controle de fluxo e possui apenas quatro campos.

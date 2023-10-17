@@ -1,0 +1,5 @@
+Ideia - Site de músicas da cantora Ariana Grande.
+
+O site em si não tem um objetivo, senão hobbie pessoal da autora.
+Contém 3 páginas com cards de músicas, onde tem-se a foto, explicação do contexto
+da música e um botão com link externo para o youtube.]
